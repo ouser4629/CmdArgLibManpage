@@ -1,5 +1,5 @@
 <!-- 
-//  Copyright (c) 2025-2026 Psummerland2 LLC.
+//  Copyright (c) 2025-2026 Peter Buenafuente Summerland.
 //  All rights reserved.
 //
 //  This Source Code Form is subject to the terms of the Mozilla Public
@@ -9,7 +9,7 @@
 
 ## CmdArgLibManpage
 
-CmdArgLibManpage is part of the [Command Argument Library](https://github.com/psummerland2/cmd-arg-lib.git).
+CmdArgLibManpage is part of the [Command Argument Library](https://github.com/ouser4629/cmd-arg-lib.git).
 
 It provides a "meta-flag" constructor that can be used to generate manpages.
 
@@ -18,7 +18,7 @@ It provides a "meta-flag" constructor that can be used to generate manpages.
 ## Usage
 
 Declare an array
-of [`ShowElements`](https://github.com/psummerland2/cmd-arg-lib/blob/main/REFERENCE.md#show-elements) that
+of [`ShowElements`](https://github.com/ouser4629/cmd-arg-lib/blob/main/REFERENCE.md#show-elements) that
 defines your manual page:
 
 ```
@@ -246,7 +246,7 @@ utility was written by
 
 ### Examples
 
-[Command Argument Library](https://github.com/psummerland2/cmd-arg-lib.git) has extensive examples
+[Command Argument Library](https://github.com/ouser4629/cmd-arg-lib.git) has extensive examples
 that show how to use `CmdArgLibManpage`.
 
 ## Project Status
