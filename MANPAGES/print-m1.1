@@ -1,0 +1,70 @@
+.Dd August 14, 2026
+.Dt PRINT-M1 1
+.Os 
+.Sh NAME
+.Nm print-m1
+.Nd print a greeting.
+.Sh SYNOPSIS
+.Nm print-m1
+[-iulv]
+.Eo \&[  Fl c Ar count Ec ]
+.Eo \&[  Fl g Ar greeting Ec ]
+.Ar name
+.Op Fl -generate-manpage
+.Sh DESCRIPTION
+Print 
+.Ar greeting Ns , followed by 
+.Ar name Ns , 
+.Ar count No  times.
+.Pp
+The following options are available:
+.Bl -tag -width indent
+.It Fl g, Fl -greeting Ar greeting
+The greeting to print (default: "Hello").
+.It Fl i
+Show index of repeated greetings.
+.It Fl l
+Print text in lower case.
+.It Fl c, Fl -count Ar count
+Repeat the greeting 
+.Ar count No  times (the default is a random integer between 1 and 3).
+.It Fl u
+Print text in upper case.
+.It Fl -generate-manpage
+Generate this manual page.
+.It Fl v, Fl -version
+Show version information.
+.El
+.Pp
+The 
+.Fl l No  and 
+.Fl u No  options shadow each other; only the last one specified
+is applicable.
+.Pp
+.Sh EXIT STATUS
+The 
+.Nm
+utility exits 0 on success, and >0 if an error occurs.
+.Pp
+.Sh EXAMPLES
+.Pp
+Say 'Hi' to John Wesley Harding:
+.Pp
+.Dl > print-m1 -c1 -g Hi 'John Wesley Harding'
+.Pp
+Say it twice with an index:
+.Pp
+.Dl > print-m1 -ic2 -g Hi 'John Wesley Harding'
+.Pp
+.Sh SEE ALSO
+.Xr man 1 ,
+.Xr mandoc 1 ,
+.Xr sed 1 ,
+.Xr mdoc 7 ,
+.Xr re_format 7
+.Pp
+.Sh AUTHORS
+The 
+.Nm
+utility was written by
+.%A Mack the Finger and Louie the King .
