@@ -1,5 +1,5 @@
 {
-  "originHash" : "07481a11042ccd8fcf5c8d77e0e30ebfc26ba41bb54454b61c59b2f040d99dc0",
+  "originHash" : "b3ca65111964e989013de6bcba3e415e9298e615efc2a315add63300e365fd2b",
   "pins" : [
     {
       "identity" : "cmdarglibcore",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/ouser4629/CmdArgLibCore.git",
       "state" : {
         "branch" : "main",
-        "revision" : "fdc959f1d30d49dfe37f4af9d14fbddc711dc245"
+        "revision" : "41512eecae9fcf809c2436244a8ac99d456434ec"
       }
     }
   ],

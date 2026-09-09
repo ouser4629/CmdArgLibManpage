@@ -95,8 +95,8 @@ extension Main {
     private static let manpageElements: [ShowElement] = [
         .prologue(description: "print a greeting."),
         .synopsis(),
-        .mdoc("DESCRIPTION", "Print $T{greeting}, followed by $E{name}, $E{repeats} times."),
-        .mdoc("", "The following options are available:"),
+        .paragraph("DESCRIPTION", "Print $T{greeting}, followed by $E{name}, $E{repeats} times."),
+        .paragraph("", "The following options are available:"),
         .parameter("greeting", "The greeting to print"),
         .parameter("includeIndex", "Show index of repeated greetings"),
         .parameter("lower", "Print text in lower case"),
@@ -104,11 +104,11 @@ extension Main {
         .parameter("upper", "Print text in upper case"),
         .parameter("generateManpage", "Generate this manual page"), 
         .parameter("version", "Show version information"),
-        .mdoc("", note1),
-        .mdoc("", exitStatus),
-        .mdoc("", examples),
-        .mdoc("", seeAlso),
-        .mdoc("", authors),
+        .paragraph("", note1),
+        .mdoc(exitStatus),
+        .mdoc(examples),
+        .mdoc(seeAlso),
+        .mdoc(authors),
     ]
 
     private static let note1 = """
