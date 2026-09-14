@@ -106,6 +106,14 @@ public extension ShowMacro {
             if let label = parameter.longestLabel {
                 insert = "\n.Fl \(label.dropFirst())"
             }
+        case Self .joinedLabelsMacro:
+            let label = parameter.joinedLabels
+            if !label.isEmpty {
+                insert = "\n.Fl \(label.dropFirst())"
+            }
+            else {
+                insert = ""
+            }
         case Self.formattedTypeNameMacro:
             var typeName = mdocTypeNameOf(parameter)
             if parameter.isVariadic {
